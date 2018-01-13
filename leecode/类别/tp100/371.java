@@ -1,43 +1,24 @@
 
-/**
-*
-104. Maximum Depth of Binary Tree
+/*
+371. Sum of Two Integers
 DescriptionHintsSubmissionsDiscussSolution
 DiscussPick One
-Given a binary tree, find its maximum depth.
+Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.
 
-The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+Example:
+Given a = 1 and b = 2, return 3.
+
+Credits:
+Special thanks to @fujiaozhu for adding this problem and creating all test cases.
 
 */
-//java怎么写
- 
+
+
+//直接a+b 也能过？？...
+
+//大神一句话 借用欧几里得+位运算？？？
 class Solution {
-    public int maxDepth(TreeNode root) {
-        if(root == null) return 0;
-        else return Math.max(maxDepth(root.left),maxDepth(root.right))+1;
+    public int getSum(int a, int b) {
+          return b == 0 ? a : getSum(a ^ b, (a & b) << 1);
     }
 }
-
-
-
-
-/* //c++
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
-class Solution {
-public:
-    int maxDepth(TreeNode* root) {
-        if(!root)  return 0;
-        else return max(maxDepth(root->left),maxDepth(root->right))+1;
-    }
-};
-
-
-/*
