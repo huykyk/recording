@@ -32,3 +32,14 @@ class Solution {
     } 
   
 }
+//
+class Solution {
+    public int[] anagramMappings(int[] A, int[] B) {
+       int l= A.length;
+       int res[] = new int[l];
+        Map<Integer,Integer> map = new HashMap<Integer,Integer>();
+        for(int i=0;i<l;i++)   map.put(B[i],i);
+        for(int i=0;i<l;i++)  res[i] = map.get(A[i]);
+        return res;
+  }
+}
