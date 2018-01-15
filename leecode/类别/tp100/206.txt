@@ -1,0 +1,8 @@
+206. Reverse Linked List
+DescriptionHintsSubmissionsDiscussSolution
+DiscussPick One
+Reverse a singly linked list.
+
+click to show more hints.
+
+Seen this question in a real interview before?  YesNo
