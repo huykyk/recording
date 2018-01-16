@@ -1,0 +1,2 @@
+model_checkpoint_path: "D:\\sample\\model.ckpt"
+all_model_checkpoint_paths: "D:\\sample\\model.ckpt"
