@@ -21,8 +21,10 @@ public class Problem_01_IsDeformation {
 	}
 
 	public static void main(String[] args) {
-		String A = "abcabcabc";
-		String B = "bcacbaacb";
+//		String A = "abcabcabc";
+//		String B = "bcacbaacb";
+		String A = "a";
+		String B = "a";
 		System.out.println(isDeformation(A, B));
 
 	}
